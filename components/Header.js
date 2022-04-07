@@ -8,6 +8,7 @@ import {
   FormControl,
 } from 'react-bootstrap';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '@/styles/Header.module.css';
 
 export default function Header() {
@@ -16,18 +17,28 @@ export default function Header() {
       <Container>
         <Navbar.Brand>
           <Link href='/'>
-            <a>LinkedIn Jobs</a>
+            <Image src='https://rb.gy/bizvqj' width={45} height={45} />
           </Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='ms-auto'>
+          <Nav className=''>
             <Nav className={styles.link}>
               <Link href='#top'>
                 <a>Home</a>
               </Link>
             </Nav>
+
+            <Form className='d-flex'>
+              <FormControl
+                type='search'
+                placeholder='Search'
+                className='me-2'
+                aria-label='Search'
+              />
+              <Button variant='outline-success'>Search</Button>
+            </Form>
           </Nav>
         </Navbar.Collapse>
       </Container>
