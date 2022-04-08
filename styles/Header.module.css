@@ -17,7 +17,7 @@
   display: flex;
 }
 
-.navForm .form-control {
+.navForm input {
   background-color: #eef3f8 !important;
 }
 

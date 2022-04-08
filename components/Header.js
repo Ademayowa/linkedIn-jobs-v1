@@ -25,12 +25,6 @@ export default function Header() {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className=''>
-            {/* <Nav className={styles.link}>
-              <Link href='#top'>
-                <a>Home</a>
-              </Link>
-            </Nav> */}
-
             {/* Add icons later */}
             <Form className={styles.navForm}>
               <FormControl
@@ -47,7 +41,7 @@ export default function Header() {
               />
             </Form>
 
-            <div className='me-3'>
+            <div className='ms-lg-3'>
               <Button className={styles.searchBtn} variant='outline-primary'>
                 Search
               </Button>
@@ -64,7 +58,7 @@ export default function Header() {
                 width={30}
                 height={30}
                 src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-                alt=''
+                alt='profile-photo'
                 className='img-fluid'
               />
             </div>
